@@ -1,10 +1,10 @@
 export interface PillProps {
-  title: string
+  styles: string
 }
 
 
 export interface ButtonProps {
-  title: string;
+  style: string;
   size: 'small' | 'medium' | 'large';
   shape: 'rounded-sm' | 'rounded-md' | 'rounded-full';
   onClick?: () => void;

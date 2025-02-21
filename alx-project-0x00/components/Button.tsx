@@ -3,7 +3,7 @@ import React from 'react';
 interface ButtonProps {
   title: string;
   size: 'small' | 'medium' | 'large';
-  shape: 'rounded-sm' | 'rounded-md' | 'rounded-full';
+  shape: 'rounded-sm' | 'rounded-md' | 'rounded-lg';
   onClick?: () => void;
 }
 
@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({ title, size, shape, onClick }) => {
   const shapeClasses = {
     'rounded-sm': 'rounded-sm',
     'rounded-md': 'rounded-md',
-    'rounded-full': 'rounded-full',
+    'rounded-lg': 'rounded-lg',
   };
 
   const combinedClasses = `${sizeClasses[size]} ${shapeClasses[shape]} bg-blue-500 text-white hover:bg-blue-600 transition`;

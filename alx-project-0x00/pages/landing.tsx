@@ -11,14 +11,14 @@ const Landing: React.FC =  () => {
         <h2 className="text-xl font-semibold">Button Sizes</h2>
         <Button title="Small Button" size="small" shape="rounded-sm" />
         <Button title="Medium Button" size="medium" shape="rounded-md" />
-        <Button title="Large Button" size="large" shape="rounded-full" />
+        <Button title="Large Button" size="large" shape="rounded-lg" />
       </div>
 
       <div className="space-y-4 mt-6">
         <h2 className="text-xl font-semibold">Button Shapes</h2>
         <Button title="Rounded-Small" size="medium" shape="rounded-sm" />
         <Button title="Rounded-Medium" size="medium" shape="rounded-md" />
-        <Button title="Rounded-Full" size="medium" shape="rounded-full" />
+        <Button title="Rounded-Full" size="medium" shape="rounded-lg" />
       </div>
     </div>
   )
