@@ -2,12 +2,12 @@ import React from 'react';
 
 interface ButtonProps {
   title: string;
-  size: 'small' | 'medium' | 'large' | 'full';
+  size: 'small' | 'medium' | 'large';
   shape: 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full';
-  Onclick? () : void
+  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, size, shape, OnClick }) => {
+const Button: React.FC<ButtonProps> = ({ title, size, shape, onClick }) => {
   const sizeClasses = {
     small: 'px-2 py-1 text-sm',
     medium: 'px-4 py-2 text-md',
