@@ -12,6 +12,7 @@ const Landing: React.FC =  () => {
         <Button title="Small Button" size="small" shape="rounded-sm" />
         <Button title="Medium Button" size="medium" shape="rounded-md" />
         <Button title="Large Button" size="large" shape="rounded-lg" />
+        <Button title="Full Button" size="full" shape="rounded-full" />
       </div>
 
       <div className="space-y-4 mt-6">
@@ -19,6 +20,7 @@ const Landing: React.FC =  () => {
         <Button title="Rounded-Small" size="medium" shape="rounded-sm" />
         <Button title="Rounded-Medium" size="medium" shape="rounded-md" />
         <Button title="Rounded-Full" size="medium" shape="rounded-lg" />
+        <Button title="Rounded-Full" size="medium" shape="rounded-full" />
       </div>
     </div>
   )

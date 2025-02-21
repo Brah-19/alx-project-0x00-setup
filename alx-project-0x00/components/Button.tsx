@@ -2,12 +2,12 @@ import React from 'react';
 
 interface ButtonProps {
   title: string;
-  size: 'small' | 'medium' | 'large';
-  shape: 'rounded-sm' | 'rounded-md' | 'rounded-lg';
-  onClick?: () => void;
+  size: 'small' | 'medium' | 'large' | 'full';
+  shape: 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full';
+  Onclick? () : void
 }
 
-const Button: React.FC<ButtonProps> = ({ title, size, shape, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ title, size, shape, OnClick }) => {
   const sizeClasses = {
     small: 'px-2 py-1 text-sm',
     medium: 'px-4 py-2 text-md',
@@ -18,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({ title, size, shape, onClick }) => {
     'rounded-sm': 'rounded-sm',
     'rounded-md': 'rounded-md',
     'rounded-lg': 'rounded-lg',
+    'rounded-full': 'rounded-full',
   };
 
   const combinedClasses = `${sizeClasses[size]} ${shapeClasses[shape]} bg-blue-500 text-white hover:bg-blue-600 transition`;
